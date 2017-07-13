@@ -7,12 +7,8 @@ MAINTAINER Aaron Boyd <aaronmboyd@gmail.com>
 RUN echo "deb http://archive.ubuntu.com/ubuntu xenial main universe" > /etc/apt/sources.list
 
 # Update ubuntu software repository (skip recommends)
-RUN apt-get update \
-    && apt-get -qq --no-install-recommends install \
-    && rm -r /var/lib/apt/lists/*
-
 # Install build dependancies
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get -qq --no-install-recommends install \
     cmake \
     cmake-curses-gui \
     git \
@@ -20,7 +16,8 @@ RUN apt-get update && apt-get install -y \
     libjannson-dev \
     libssl \
     nvidia-cuda-dev \
-    nvidia-cuda-toolkit \
+    nvidia-cuda-toolkit \    
+    && rm -r /var/lib/apt/lists/*
 
 RUN mkdir xmrMiner \
     cd xmrMiner \
