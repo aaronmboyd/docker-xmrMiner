@@ -13,7 +13,7 @@ RUN apt-get update && apt-get -qq --no-install-recommends install \
     cmake-curses-gui \
     git \
     libcurl4-gnutls-dev \
-    libjannson-dev \
+    libjansson-dev \
     libssl \
     nvidia-cuda-dev \
     nvidia-cuda-toolkit \    
