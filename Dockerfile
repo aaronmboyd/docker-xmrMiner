@@ -15,6 +15,11 @@ RUN apt-get update && apt-get -qq --no-install-recommends install \
     libcurl4-gnutls-dev \
     libjansson-dev \
     libssl-dev \
+    && rm -r /var/lib/apt/lists/*
+
+RUN dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+
+RUN apt-get update && apt-get -qq --no-install-recommends install \
     nvidia-cuda-dev \
     nvidia-cuda-toolkit \    
     && rm -r /var/lib/apt/lists/*
