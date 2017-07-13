@@ -22,12 +22,12 @@ RUN apt-get install -y \
     nvidia-cuda-dev \
     nvidia-cuda-toolkit \
 
-RUN mkdir -p xmrMiner \
+RUN mkdir xmrMiner \
     cd xmrMiner \
 
 RUN git clone https://github.com/xmrMiner/xmrMiner.git
 
-RUN mkdir -p build \
+RUN mkdir build \
     cd build
 
 RUN cmake -DCMAKE_INSTALL_PREFIX=$HOME/xmrMiner ../xmrMiner
