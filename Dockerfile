@@ -14,7 +14,7 @@ RUN apt-get update && apt-get -qq --no-install-recommends install \
     git \
     libcurl4-gnutls-dev \
     libjansson-dev \
-    libssl \
+    libssl-dev \
     nvidia-cuda-dev \
     nvidia-cuda-toolkit \    
     && rm -r /var/lib/apt/lists/*
