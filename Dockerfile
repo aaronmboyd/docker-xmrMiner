@@ -12,7 +12,7 @@ RUN apt-get update && apt-get -qq --no-install-recommends install \
     cmake \
     cmake-curses-gui \
     git \
-    libcurl14-gnutls-dev \
+    libcurl4-gnutls-dev \
     libjannson-dev \
     libssl \
     nvidia-cuda-dev \
