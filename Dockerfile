@@ -11,16 +11,16 @@ RUN apt-get update \
     && apt-get -qq --no-install-recommends install \
     && rm -r /var/lib/apt/lists/*
 
-# Install dependancies
-RUN apt-get install -y \
-    && cmake \
-    && cmake-curses-gui \
-    && git \
-    && libcurl14-gnutls-dev \
-    && libjannson-dev \
-    && libssl \
-    && nvidia-cuda-dev \
-    && nvidia-cuda-toolkit \
+# Install build dependancies
+RUN apt-get update && apt-get install -y \
+    cmake \
+    cmake-curses-gui \
+    git \
+    libcurl14-gnutls-dev \
+    libjannson-dev \
+    libssl \
+    nvidia-cuda-dev \
+    nvidia-cuda-toolkit \
 
 RUN mkdir xmrMiner \
     cd xmrMiner \
