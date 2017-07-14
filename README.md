@@ -1,10 +1,12 @@
 # docker-xmrMiner
 
-A Docker image for running [xmrMiner](https://github.com/xmrMiner/xmrMiner) under Ubuntu 16.04 64-bit architecture.
+A Docker image for running [xmrMiner](https://github.com/xmrMiner/xmrMiner) based on Ubuntu 16.04 x86_64.
 
 ## Links
 
+- [xmrMiner GitHub](https://github.com/xmrMiner/xmrMiner)
 - [xmrMiner on Reddit](https://www.reddit.com/r/Monero/comments/5xciun/xmrminer_a_new_high_optimized_nvidia_gpu_miner/)
+- [CUDA Home](http://www.nvidia.com/object/cuda_home_new.html)
 
 # Donations
 
