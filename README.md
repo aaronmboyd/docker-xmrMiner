@@ -9,7 +9,7 @@ A Docker image for running [xmrMiner](https://github.com/xmrMiner/xmrMiner) base
 1. [Verify you have a CUDA-enabled GPU](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#verify-you-have-cuda-enabled-system)
 2. [Install Docker](https://docs.docker.com/engine/installation/)
 3. Clone this repository `git clone https://github.com/aaronmboyd/docker-xmrMiner.git`
-4. Build this Docker image `docker build /docker-xmrMiner/. -t xmrminer`
+4. Build this Docker image `docker build ./docker-xmrMiner/ -t xmrminer`
 
 ### Running
 
