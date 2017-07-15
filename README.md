@@ -2,7 +2,7 @@
 
 A Docker image for running [xmrMiner](https://github.com/xmrMiner/xmrMiner) based on Ubuntu 16.04 x86_64. Uses the CUDA 8.0 toolkit. Whilst there are a couple of steps to pass your host system's NVIDIA devices to the container, this image is intended mostly to abstract managing and installing CUDA dependencies and C compilation of the source.
 
- - Note - this is a very large Docker image due to the CUDA drivers being over 1.5GiB - future updates will focus on using a smaller Docker base image and only adding the absolute minimum of build dependencies.
+ - Note - this is a reasonably large Docker image (1.69Gb) due to the CUDA drivers being over 1.5GB itself.
 
 ### Getting started
 
