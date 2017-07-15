@@ -4,7 +4,11 @@ A Docker image for running [xmrMiner](https://github.com/xmrMiner/xmrMiner) base
 
  - Note - this is a reasonably large Docker image (1.69Gb) due to the CUDA drivers being over 1.5GB itself.
 
-### Getting started
+### Getting Started
+
+1. Pull from the Docker repository `docker pull aaronmboyd/xmrminer`
+
+### Getting Started - building the Docker image yourself
 
 1. [Verify you have a CUDA-enabled GPU](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#verify-you-have-cuda-enabled-system)
 2. [Install Docker](https://docs.docker.com/engine/installation/)
