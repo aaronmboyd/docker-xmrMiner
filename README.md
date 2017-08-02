@@ -4,7 +4,7 @@ Docker images for running [psychocrypt's](https://github.com/psychocrypt) Monero
 
 By using the [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) wrapper for the Docker CLI, we can achieve true containerisation of a CUDA application and avoid the following:
 1. The host machine requiring CUDA installed
-* Passing the NVIDIA devices as command-line arguments to the Docker engine
+2. Passing the NVIDIA devices as command-line arguments to the Docker engine
 
 See the [nvidia-docker "Motivation" Wiki entry for more detail.](https://github.com/NVIDIA/nvidia-docker/wiki/Motivation)
 ### Prerequisites
@@ -51,7 +51,7 @@ docker pull aaronmboyd/xmrminer
 
 #### Troubleshooting installation of nvidia-docker
 
-1. `nvidia-modprobe` missing. If you see something similar to the following message on install;
+***`nvidia-modprobe` missing? If you see something similar to the following message on install;***
 ```
 Selecting previously unselected package nvidia-docker.
 (Reading database ... 308844 files and directories currently installed.)
