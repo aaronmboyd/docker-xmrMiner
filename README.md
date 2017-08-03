@@ -83,7 +83,7 @@ Enjoy hashing!
 
 ### Further reading
 
-- [nvidia-docker]((https://github.com/xmrMiner/nvidia-docker)
+- [nvidia-docker](https://github.com/xmrMiner/nvidia-docker)
 - [xmrMiner GitHub](https://github.com/xmrMiner/xmrMiner)
 - [xmrMiner on Reddit](https://www.reddit.com/r/Monero/comments/5xciun/xmrminer_a_new_high_optimized_nvidia_gpu_miner/)
 - [CUDA Home](http://www.nvidia.com/object/cuda_home_new.html)
