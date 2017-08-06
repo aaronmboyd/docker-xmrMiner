@@ -1,6 +1,6 @@
 # docker-xmrminer
 
-Docker images for running [psychocrypt's](https://github.com/psychocrypt) Monero miner: [xmrMiner](https://github.com/xmrMiner/xmrMiner) inside a NVIDIA CUDA enabled Docker container.
+Docker images for running [psychocrypt's](https://github.com/psychocrypt) Monero miner: [xmrMiner](https://github.com/xmrMiner/xmrMiner) inside a NVIDIA CUDA enabled Docker container. Operating system targets for this image are limited to Linux kernels at this point since [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) is only available for these architectures so far.
 
 By using the [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) wrapper for the Docker CLI, we can achieve true containerisation of a CUDA application and avoid the following:
 1. The host machine requiring CUDA installed
@@ -49,7 +49,7 @@ docker pull aaronmboyd/xmrminer
   NV_GPU=0 nvidia-docker run aaronmboyd/xmrminer --url=stratum+tcp://mine.xmrpool.net:5555 --launch=10x24 --bfactor=4 --bsleep=100 --user=44NxHdzAJPVZkfXGnRd7kiGc1xCrg3GPncMwECKCmfbXRhVqhTreT7a2DGWcwCD3f7FnDsu1eCYusaTJoaETPajD3dPTdpQ -p docker_worker_1 --donate=1
 ```
 
-#### Troubleshooting installation of nvidia-docker
+#### Troubleshooting installation of nvidia-docker (Debian/Ubuntu)
 
 ***`nvidia-modprobe` missing? If you see something similar to the following message on install;***
 ```
