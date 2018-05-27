@@ -1,3 +1,5 @@
+**This project is deprecated. [xmr-stak](https://github.com/fireice-uk/xmr-stak) is the successor to `xmrMiner` and Dockerfiles now exist in the codebase.**
+
 # docker-xmrminer
 
 Docker images for running [psychocrypt's](https://github.com/psychocrypt) Monero miner: [xmrMiner](https://github.com/xmrMiner/xmrMiner) inside a NVIDIA CUDA enabled Docker container. Operating system targets for this image are limited to Linux kernels at this point since [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) is only available for these architectures so far.
